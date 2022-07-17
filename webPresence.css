@@ -1,0 +1,76 @@
+body {
+    background-image: linear-gradient(270deg, black, lightblue);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+footer {
+    color: white;
+}
+
+div {
+    color: white;
+}
+
+#paraFunc {
+    color: white;
+
+}
+
+#headFunc {
+    color: white;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+#CountdownStatus {
+    color: red;
+    font-style: oblique;
+}
+
+#crapsStatus {
+    color: white
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    border-radius: 15px;
+    border-color: black;
+}
+
+#data {
+    background-image: linear-gradient(200deg, white, lightblue);
+}
+
+tbody {
+    color: white;
+}
+
+.soundsbutton {
+    width: 175px;
+    height: 30px;
+    background-color: purple;
+    border-radius: 15px;
+    border-color: black;
+}
+
+.crazybutton {
+    width: 175px;
+    height: 30px;
+    background-color: green;
+    border-radius: 15px;
+    border-color: black;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Week 1 Assignment
+Assignment: Launching your UAT Space Program HTML Document Tags
+Kaiden Wallenfelsz
+kaiwalle@uat.edu-->
+
+<html>
+
+<head>
+
+
+    <!--Tells the webpage which file to load scripts from-->
+    <script src="webPresenceLaunchData.js"></script>
+    <script src="dataLoader-1.js"></script>
+    <script src="webPresence.js"></script>
+    <script>
+        var theTime = new Date();
+        var time_interval = 5000;
+        var last_iteration = 0;
+        var running = true;
+        var index = 0;
+        var timer;
+        var data = getData();
+    </script>
+    <link href="webPresence.css" rel="stylesheet" type="text/css">
+
+    <title>
+        Kaiden Wallenfelsz's UATSpace Page
+    </title>
+
+</head>
+
+<body>
+    <!-- Table to Hold UAT Space Logo and Header text-->
+    <table>
+        <tr>
+            <td>
+                <img src="UATSpaceLogo.jpg">
+            </td>
+            <td>
+                <h1>
+                    UAT Space Program
+                </h1>
+            </td>
+        </tr>
+    </table>
+    <!-- Data table
+    Contains all data relevant for the table on the webpage
+    first commands set the border of the table and its aesthetic-->
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead>
+            <th>
+                Data type
+            </th>
+            <th>
+                Reading
+            </th>
+        </thead>
+        <tbody>
+            <tr id="seconds"></tr>
+            <tr id="latitude"> </tr>
+            <tr id="longitude"></tr>
+            <tr id="gps_altitude"></tr>
+            <tr id="bpm_altitude"></tr>
+            <tr id="bmp_pressure"></tr>
+            <tr id="bmp_temperature"></tr>
+            <tr id="dig_temperature"></tr>
+            <tr id="css_temperature"></tr>
+            <tr id="css_eCO2"></tr>
+            <tr id="css_TVOC"> </tr>
+            <tr id="uv"> </tr>
+            <tr id="accel_x"></tr>
+            <tr id="accel_y"></tr>
+            <tr id="accel_z"></tr>
+            <tr id="magnetic_x"></tr>
+            <tr id="magnetic_y"></tr>
+            <tr id="magnetic_z"></tr>
+            <tr id="gyro_x"></tr>
+            <tr id="gyro_y"></tr>
+            <tr id="gyro_z"></tr>
+        </tbody>
+    </table>
+
+    <script>
+        // alert function Sorry about that I tottaly forgot I switched to github upload and I got rid of the line for testing and didn't put it back in
+        // alert("This is a test for the alert function.");
+        //test use of document.write fucntion
+        document.write("This is a test of the document.write fucntion");
+    </script>
+    <p id="paraFunc">
+        Test of the paragraph fucntion
+    </p>
+
+    <!-- Countdown timer title-->
+    <h2 id="headFunc"> Countdown timer</h2>
+    <!-- Status of current countdown timer-->
+    <div id="CountdownStatus">Timer Status</div>
+    <br>
+    <br>
+    <!-- Starts the Countdown through the function called "blastoffTimerV3()" This starts the countdown-->
+    <button onclick="startFun();" class="button" id="startButton">Start</button>
+    <!--Stop Button-->
+    <button onclick="stopFun();" class="button" id="stopButton">Stop</button>
+    <br>
+    <br>
+    <br>
+    The current time is: <div id="clockTime">Press start to display current time</div>
+
+    <!-- 
+    Craps game 
+    1. Button to roll dice
+    2. Crap Status line
+    3. Header for Craps game
+    story of our craps game
+    At least 3-4 sentences
+    The society that this space launch happens in is a very suppersitious society that relys on lucky numbers in their daily lives.
+    Therefor for every space launch they play craps and if they get 7 or more Craps they cancel the ship launch.
+    Since they didnt want to waste money on broadcasting the craps rolls they decided to include it on their webpage with the countdown so as to save money. 
+    The by product is that the population now uses it to gamble but such is life.
+    
+
+    Header for Craps game-->
+    <h2>Try your hand at Craps</h2>
+    <div id="crapsStatus">Craps Status</div><br>
+    <button class="button" onclick="playCraps();">Play Craps</button>
+    <br>
+    <br>
+
+    <!--button to play space station sounds-->
+    <h3>Play space station sounds</h3>
+    <h4>Warning, it may get loud</h4>
+    <button class="soundsbutton" onclick="playStation();">Play space station sounds</button>
+    <!-- Plays crazy frog when pressed-->
+    <button class="crazybutton" style="margin:45px;" onclick="playCrazyFrog();">Play Crazy Frog</button>
+
+</body>
+<br>
+<br>
+<center>
+    <a href="./boards.html" style="color:white" ;>Goto Boards Page</a> |
+    <a href="./index.html" style="color:white" ;>Goto Home Page</a>
+</center>
+
+</html>
