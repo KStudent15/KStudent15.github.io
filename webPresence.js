@@ -147,7 +147,7 @@ function blastoffTimerV2() {
 }
 //blastoff timer version 3 
 function blastoffTimerV3() {
-    console.log("blastoffTimerV2() Started");
+    console.log("blastoffTimerV3() Started");
     //loop that runs 11 times, 10 for countdown, 1 for Blast off.
     //Sets the variable to countdown from
     var countdownTimer = 10;
@@ -179,6 +179,7 @@ function blastoffTimerV3() {
 //when start button is pressed starts timer, enables stop button, and disables start button 
 function startFun() {
     console.log("startFun() started");
+    blastoffTimerV3();
     //every 5 seconds update display 
     document.getElementById("data").rows["seconds"].innerHTML = "reading data";
     index = 0;
