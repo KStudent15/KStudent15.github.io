@@ -70,7 +70,9 @@ function updateDisplay() {
 
     // record and display time
     theTime = new Date();
-    document.getElementById("clockTime").innerHTML = theTime.getHours() + ":" + theTime.getMinutes() + ":" + theTime.getSeconds();
+    document.getElementById("clockTime").innerHTML = theTime.getHours() + ":"
+        + (theTime.getMinutes() < 10 ? "0" + theTime.getMinutes() : theTime.getMinutes()) + + ":"
+        + (theTime.getSeconds() < 10 ? "0" + theTime.getSeconds() : theTime.getSeconds());
 
     var timeRead = data[index].time_seconds;
     //update table...
