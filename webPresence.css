@@ -4,34 +4,34 @@ body {
 }
 
 h1 {
-    color: white;
+    color: black;
 }
 
 h2 {
-    color: white;
+    color: black;
 }
 
 h3 {
-    color: white;
+    color: black;
 }
 h4{
-    color:white;
+    color:black;
 }
 footer {
-    color: white;
+    color: black;
 }
 
 div {
-    color: white;
+    color: black;
 }
 
 #paraFunc {
-    color: white;
+    color: black;
 
 }
 
 #headFunc {
-    color: white;
+    color: black;
     font-size: 2em;
     text-decoration: underline;
 }
@@ -42,7 +42,7 @@ div {
 }
 
 #crapsStatus {
-    color: white
+    color: black;
 }
 
 .button {
@@ -58,7 +58,7 @@ div {
 }
 
 tbody {
-    color: white;
+    color: black;
 }
 
 .soundsbutton {

@@ -179,7 +179,6 @@ function blastoffTimerV3() {
 //when start button is pressed starts timer, enables stop button, and disables start button 
 function startFun() {
     console.log("startFun() started");
-    blastoffTimerV3();
     //every 5 seconds update display 
     document.getElementById("data").rows["seconds"].innerHTML = "reading data";
     index = 0;
